@@ -14,7 +14,7 @@
   --color-surface-100: #EEF1F5;
   
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  font-serif: "Jost", "Inter", sans-serif; /* Jost for Headings */
+  --font-serif: "Jost", "Inter", sans-serif; /* Jost for Headings */
 
   --gradient-color: #8350e8;
   --sparkles-color: #8350e8;
