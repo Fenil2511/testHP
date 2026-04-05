@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 export function CTASection() {
   return (
-    <section className="py-24 bg-surface-50 relative overflow-hidden">
+    <section className="py-12 md:py-24 bg-surface-50 relative overflow-hidden">
       {/* Professional Wave Transitions to match Home Page architecture */}
-      <div className="absolute top-0 left-0 w-full h-24 bg-white section-wave-top rotate-180"></div>
+      <div className="absolute top-0 left-0 w-full h-12 md:h-24 bg-white section-wave-top rotate-180"></div>
       
-      <div className="container mx-auto px-6 md:px-12 relative z-10 pt-12 pb-24">
+      <div className="container mx-auto px-6 md:px-12 relative z-10 pt-6 pb-12 md:pt-12 md:pb-24">
         <div className="relative rounded-[2rem] md:rounded-[4rem] overflow-hidden shadow-2xl bg-white min-h-[350px] md:min-h-[500px] flex items-center justify-center group border border-indigo-navy/5">
           {/* Light-Themed Motion Background - Contained for Uniformity */}
           <motion.div 
@@ -54,7 +54,7 @@ export function CTASection() {
       </div>
       
       {/* Wave Transition into Footer Context */}
-      <div className="absolute bottom-0 left-0 w-full h-24 bg-indigo-navy section-wave-bottom"></div>
+      <div className="absolute bottom-0 left-0 w-full h-12 md:h-24 bg-indigo-navy section-wave-bottom"></div>
     </section>
   );
 }
