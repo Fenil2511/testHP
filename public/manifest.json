@@ -1,0 +1,21 @@
+{
+  "name": "Himanshu Parashar | Media & Brand Consultant",
+  "short_name": "Himanshu P.",
+  "description": "Premium personal brand portfolio website for Himanshu Parashar, a high authority media strategist and brand architect in India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#191970",
+  "icons": [
+    {
+      "src": "https://ik.imagekit.io/ib9n0o3ps/Brandquest%20Logo%20BQ%202%20-%20Himanshu%20Parashar.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://ik.imagekit.io/ib9n0o3ps/Brandquest%20Logo%20BQ%202%20-%20Himanshu%20Parashar.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

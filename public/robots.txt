@@ -1,0 +1,31 @@
+# Robots.txt for Himanshu Parashar - Media & Brand Consultant
+# https://himanshuparashar.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /node_modules/
+
+# Sitemaps
+Sitemap: https://himanshuparashar.com/sitemap.xml
+
+# Crawl-delay (optional, respected by some bots)
+# Crawl-delay: 1
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+
+# Allow all social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
