@@ -64,7 +64,7 @@ export function Home() {
               </motion.h1>
 
               <motion.p variants={fadeInUp} className="text-lg md:text-xl text-slate-500 font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                Strategic media consulting for visionary brands. We specialize in high-impact <span className="text-indigo-navy font-bold">Radio</span>, <span className="text-indigo-navy font-bold">TV News</span>, and <span className="text-indigo-navy font-bold">Award-winning</span> brand architectures.
+                We craft 360-degree narratives that resonate everywhere—from TV and Print to digital screens and the streets. By integrating Radio, OOH, and surgical PR, I turn your brand’s vision into an unavoidable presence. Let’s make your impact total, seamless, and impossible to ignore.
               </motion.p>
 
               <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center gap-6 pt-4 w-full sm:w-auto">
@@ -92,10 +92,10 @@ export function Home() {
               <div className="relative z-10 aspect-square max-w-2xl mx-auto flex items-center justify-center">
                  {/* Profile/Main Image with artistic flare */}
                 <div className="relative w-4/5 h-4/5 bg-indigo-navy/5 rounded-[4rem] overflow-hidden border-8 border-white shadow-2xl rotate-3 group overflow-hidden">
-                   <img
+                    <img
                     src="https://ik.imagekit.io/ib9n0o3ps/IMG-20250821-WA0070%20-%20Himanshu%20Parashar.jpg"
                     alt="Himanshu Parashar"
-                    className="w-full h-full object-cover -rotate-3 scale-110 group-hover:scale-125 transition-transform duration-1000"
+                    className="w-full h-full object-cover object-top -rotate-3 scale-100 group-hover:scale-110 transition-transform duration-1000"
                   />
                 </div>
 
