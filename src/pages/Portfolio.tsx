@@ -35,7 +35,7 @@ const projects = [
   },
   {
     id: "bajaj-mileage",
-    title: "Sabse Jyada Mileage Challenge",
+    title: "Sabse Jyada Mileage Test Challenge",
     client: "Bajaj Auto",
     category: "Strategic Projects",
     image: "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
@@ -44,7 +44,7 @@ const projects = [
   },
   {
     id: "hero-honda",
-    title: "Campus Challenge",
+    title: "Jung Campus Challenge",
     client: "Hero Honda",
     category: "Brand Campaigns",
     image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
