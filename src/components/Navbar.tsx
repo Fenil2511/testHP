@@ -59,7 +59,7 @@ export function Navbar() {
             alt="Brand Quest" 
             className="h-10 w-auto object-contain rounded-md border-2 border-white shadow-sm"
           />
-          <span className="text-white text-xl md:text-2xl font-extrabold tracking-tight uppercase hidden sm:block">
+          <span className="text-white text-base sm:text-xl md:text-2xl font-extrabold tracking-tight uppercase">
             Himanshu Parashar<span className="text-brand">.</span>
           </span>
         </Link>
