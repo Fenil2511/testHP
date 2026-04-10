@@ -32,7 +32,7 @@ function StatCounter({ value, prefix = '', suffix = '' }: { value: number; prefi
   const count = useMotionValue(0);
   const rounded = useTransform(count, (latest) => Math.round(latest));
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: true, margin: "-10px" });
 
   useEffect(() => {
     if (isInView) {

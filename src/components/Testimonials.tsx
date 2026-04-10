@@ -95,7 +95,7 @@ export function Testimonials({ isDark = false }: { isDark?: boolean }) {
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          <div className="relative min-h-[280px] flex items-center justify-center">
+          <div className="relative min-h-[400px] md:min-h-[320px] lg:min-h-[280px] flex items-center justify-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
