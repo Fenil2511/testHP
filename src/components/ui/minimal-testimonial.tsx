@@ -56,7 +56,7 @@ export function TestimonialsMinimal() {
               className={`
                 relative w-10 h-10 rounded-full overflow-hidden ring-2 ring-white
                 transition-all duration-300 ease-out
-                ${active === i ? "z-10 scale-110" : "grayscale hover:grayscale-0 hover:scale-105"}
+                ${active === i ? "z-10 scale-110" : "lg:grayscale lg:hover:grayscale-0 lg:hover:scale-105"}
               `}
             >
               <img src={t.image} alt={t.name} className="w-full h-full object-cover" />

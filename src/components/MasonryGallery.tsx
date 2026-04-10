@@ -220,7 +220,7 @@ export const MasonryGallery: React.FC<MasonryGalleryProps> = ({
         }
         if (colorShiftOnHover) {
             const overlay = element.querySelector('.color-overlay');
-            if (overlay) gsap.to(overlay, { opacity: 0.9, duration: 0.4 }); // Increase opacity for better text readability
+            if (overlay) gsap.to(overlay, { opacity: 0.9, duration: 0.4 }); 
         }
     };
 
@@ -261,24 +261,24 @@ export const MasonryGallery: React.FC<MasonryGalleryProps> = ({
                     onMouseLeave={e => handleMouseLeave(item.id, e.currentTarget)}
                 >
                     <div
-                        className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105"
-                        style={{ backgroundImage: `url(${item.img})` }}
+                        className="w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-700 group-hover:scale-105 bg-gray-800"
+                        style={{ backgroundImage: `url("${item.img}")` }}
                     >
                         {colorShiftOnHover && (
-                            <div className="color-overlay absolute inset-0 bg-midnight/80 opacity-0 pointer-events-none transition-opacity" />
+                            <div className="color-overlay absolute inset-0 bg-black/80 opacity-0 pointer-events-none transition-opacity" />
                         )}
 
                         {/* Static Default State on Image */}
-                        <div className="absolute inset-0 p-6 flex flex-col justify-end bg-gradient-to-t from-midnight/90 via-midnight/20 to-transparent pointer-events-none group-hover:opacity-0 transition-opacity duration-300">
-                            {item.title && <h3 className="text-white font-serif text-2xl font-bold">{item.title}</h3>}
+                        <div className="absolute inset-0 p-6 flex flex-col justify-end bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none group-hover:opacity-0 transition-opacity duration-300">
+                            {item.title && <h3 className="text-white font-serif text-lg md:text-xl font-bold">{item.title}</h3>}
                         </div>
                     </div>
 
 
                     {/* Hover State Detail Content */}
                     <div className="absolute inset-x-0 bottom-0 p-8 flex flex-col translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 pointer-events-none z-10">
-                        {item.step && <div className="text-burnt-orange font-serif font-bold text-5xl mb-2">{item.step}</div>}
-                        {item.title && <h3 className="text-white font-serif text-3xl font-bold mb-3">{item.title}</h3>}
+                        {item.step && <div className="text-brand font-serif font-bold text-5xl mb-2">{item.step}</div>}
+                        {item.title && <h3 className="text-white font-serif text-2xl md:text-3xl font-bold mb-3">{item.title}</h3>}
                         {item.desc && <p className="text-gray-300 font-light text-sm leading-relaxed">{item.desc}</p>}
                     </div>
                 </div>

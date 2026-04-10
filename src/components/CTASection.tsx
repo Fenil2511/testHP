@@ -1,60 +1,42 @@
-import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
+import { motion } from 'motion/react';
 
 export function CTASection() {
   return (
-    <section className="py-12 md:py-24 bg-surface-50 relative overflow-hidden">
-      {/* Professional Wave Transitions to match Home Page architecture */}
-      <div className="absolute top-0 left-0 w-full h-12 md:h-24 bg-white section-wave-top rotate-180"></div>
-      
-      <div className="container mx-auto px-6 md:px-12 relative z-10 pt-6 pb-12 md:pt-12 md:pb-24">
-        <div className="relative rounded-[2rem] md:rounded-[4rem] overflow-hidden shadow-2xl bg-white min-h-[350px] md:min-h-[500px] flex items-center justify-center group border border-indigo-navy/5">
-          {/* Light-Themed Motion Background - Contained for Uniformity */}
-          <motion.div 
-            initial={{ scale: 1 }}
-            animate={{ scale: 1.1 }}
-            transition={{ 
-              duration: 40, 
-              repeat: Infinity, 
-              repeatType: "reverse", 
-              ease: "linear" 
-            }}
-            className="absolute inset-0 z-0"
-          >
-            <img 
-              src="/cta-motion-light-bg.png" 
-              alt="Media Motion Background Light" 
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
-
-          {/* Sophisticated Soft Light Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-white/60 via-transparent to-white/40 z-10" />
-
-          {/* Minimalist Action Center */}
-          <div className="relative z-20 text-center px-6">
-            <motion.div
-               initial={{ opacity: 0, scale: 0.9 }}
-               whileInView={{ opacity: 1, scale: 1 }}
-               viewport={{ once: true }}
-               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <Link 
-                to="/contact" 
-                className="btn-pill btn-secondary shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 px-12 py-5"
-              >
-                Work With Himanshu
-              </Link>
-            </motion.div>
-          </div>
-
-          {/* Artistic Frame Glare */}
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white/10 to-transparent pointer-events-none z-15"></div>
-        </div>
+    <section className="relative bg-dark py-24 overflow-hidden">
+      <div className="absolute inset-0 z-0 opacity-20">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src="/Videos/Abstract_D_Motion_Background_Generation.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-dark/60" />
       </div>
-      
-      {/* Wave Transition into Footer Context */}
-      <div className="absolute bottom-0 left-0 w-full h-12 md:h-24 bg-indigo-navy section-wave-bottom"></div>
+      <div className="max-w-7xl mx-auto px-6 md:px-10 text-center relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6">
+            Ready to Build Your Brand?
+          </h2>
+          <p className="text-white/50 text-lg mb-10 max-w-lg mx-auto">
+            Let's create a media strategy that delivers real results for your business.
+          </p>
+          <Link
+            to="/contact"
+            className="btn btn-primary"
+          >
+            Let's Get Started
+          </Link>
+        </motion.div>
+      </div>
     </section>
   );
 }
