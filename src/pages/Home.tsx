@@ -92,13 +92,16 @@ export function Home() {
             <p className="text-white/60 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
               20 years of expertise, 360-degree impact. I fuse the authority of TV and Print with the reach of Digital, OOH, and Radio—all amplified by surgical PR and activations. I don’t just build brands; I scale them to market dominance. Let’s make your impact unavoidable.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Link to="/contact" className="btn btn-primary">
+            <div className="flex flex-wrap gap-4 mt-8">
+              <Link to="/contact" className="btn btn-primary inline-flex">
                 Get in Touch
               </Link>
-              <Link to="/portfolio" className="btn border-2 border-white/40 text-white hover:bg-white hover:text-dark">
+              <Link to="/portfolio" className="btn border-2 border-white/40 text-white hover:bg-white hover:text-dark inline-flex">
                 View Our Work
               </Link>
+              <a href="#testimonials" className="btn btn-white inline-flex">
+                Clients & Reviews
+              </a>
             </div>
           </motion.div>
         </div>

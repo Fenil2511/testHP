@@ -14,6 +14,8 @@ const row1 = [
   { name: 'Alpha Neuro Clinic', src: '/logos/Alpha%20Neuro%20Clinic.jpg' },
   { name: 'Bake & Shake', src: '/logos/Bake%20&%20Shake.png' },
   { name: 'Billipatra Jewels', src: '/logos/Billipatra%20Jewels.jpg' },
+  { name: 'Harmonic Clinic', src: '/logos/Harmonic%20Clinic.png' },
+  { name: 'Kohinoor Group', src: '/logos/Kohinoor-Group.webp' },
 ];
 
 const row2 = [
@@ -28,6 +30,8 @@ const row2 = [
   { name: 'Kesariya', src: '/logos/kesariyalogo.webp' },
   { name: 'Unity', src: '/logos/unity%20logo%20eng%20(1)%20(1).webp' },
   { name: 'Dr. Jenny M Gandhi', src: '/logos/dr-jenny-m-gandhi-surat-surat-general-physician-doctors-mmbuf8y8hu-250.jpg' },
+  { name: 'Mansarovar School', src: '/logos/Mansarovar%20School.png' },
+  { name: 'Logo 01', src: '/logos/logo01.png' },
 ];
 
 export function ClientShowcase() {
@@ -50,7 +54,7 @@ export function ClientShowcase() {
                 ease: "linear",
               },
             }}
-            className="flex flex-none gap-20 pr-20 items-center"
+            className="flex flex-none gap-10 pr-10 items-center"
           >
             {[...row1, ...row1, ...row1].map((logo, i) => (
               <div key={i} className="flex-none h-12 w-32 flex items-center justify-center">
@@ -77,7 +81,7 @@ export function ClientShowcase() {
                 ease: "linear",
               },
             }}
-            className="flex flex-none gap-20 pr-20 items-center"
+            className="flex flex-none gap-10 pr-10 items-center"
           >
             {[...row2, ...row2, ...row2].map((logo, i) => (
               <div key={i} className="flex-none h-12 w-32 flex items-center justify-center">
