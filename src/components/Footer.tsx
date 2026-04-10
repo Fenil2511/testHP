@@ -8,7 +8,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <Link to="/" className="block mb-4">
+            <Link to="/" className="inline-flex items-center gap-3 mb-4">
+              <img 
+                src="/Brandquest%20Logo%20BQ%202%20-%20Himanshu%20Parashar%20(1).jpg" 
+                alt="Brand Quest" 
+                className="h-10 md:h-12 w-auto object-contain rounded-md border-2 border-white shadow-sm"
+              />
               <span className="text-2xl font-extrabold tracking-tight uppercase">
                 Himanshu Parashar<span className="text-brand">.</span>
               </span>

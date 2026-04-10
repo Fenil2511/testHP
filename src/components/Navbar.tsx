@@ -53,8 +53,13 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-10 flex justify-between items-center">
-        <Link to="/" className="flex items-center">
-          <span className="text-white text-xl md:text-2xl font-extrabold tracking-tight uppercase">
+        <Link to="/" className="flex items-center gap-3">
+          <img 
+            src="/Brandquest%20Logo%20BQ%202%20-%20Himanshu%20Parashar%20(1).jpg" 
+            alt="Brand Quest" 
+            className="h-10 w-auto object-contain rounded-md border-2 border-white shadow-sm"
+          />
+          <span className="text-white text-xl md:text-2xl font-extrabold tracking-tight uppercase hidden sm:block">
             Himanshu Parashar<span className="text-brand">.</span>
           </span>
         </Link>

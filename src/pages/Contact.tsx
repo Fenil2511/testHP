@@ -116,19 +116,28 @@ export function Contact() {
                 viewport={{ once: true }}
                 className="space-y-10"
               >
-                <h2 className="text-2xl font-extrabold">Contact Information</h2>
-                <div className="w-12 h-1 bg-brand" />
+                <div className="pt-2">
+                  <h2 className="text-2xl font-extrabold pb-4">Contact Information</h2>
+                  <div className="w-12 h-1 bg-brand" />
+                </div>
 
                 <div className="space-y-8">
                   <div className="flex items-start gap-4">
                     <MapPin size={20} className="text-brand shrink-0 mt-1" />
                     <div>
                       <h4 className="text-xs font-bold tracking-[0.15em] uppercase text-gray-400 mb-2">Office</h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Brand Quest, 2nd Floor 2056/A,<br />
-                        Veniziano Mall, Vesu,<br />
-                        Surat 395007, India
-                      </p>
+                      <div className="flex flex-col sm:flex-row sm:items-start gap-4">
+                        <img 
+                          src="/Brandquest%20Logo%20BQ%202%20-%20Himanshu%20Parashar%20(1).jpg" 
+                          alt="Brand Quest" 
+                          className="h-14 w-auto object-contain rounded border border-gray-200 mix-blend-multiply flex-shrink-0" 
+                        />
+                        <p className="text-gray-600 text-sm leading-relaxed mt-1 sm:mt-0">
+                          <strong>Brand Quest</strong><br />
+                          2nd Floor 2056/A, Veniziano Mall,<br />
+                          Vesu, Surat 395007, India
+                        </p>
+                      </div>
                     </div>
                   </div>
 
